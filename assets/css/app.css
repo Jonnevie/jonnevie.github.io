@@ -1,0 +1,139 @@
+body {
+    color: #8cc5c3;
+    background-color: #abc58c;
+    background-color: white;
+    border-color: #a68cc5;
+    caret-color: #c58c8f;    
+    font-family: 'Nunito', sans-serif;
+}
+
+.top-bar, .top-bar-left, ul.dropdown.menu {
+    background-color: #97c3c1;
+    color: white;
+    padding: 0;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.menu-text img{
+    max-width: 9vw; /* find suitable value for you */
+    display: block;
+    width: 100%;
+}
+
+.dropdown.menu li a{
+    color: white;
+}
+
+ul.dropdown-menu {
+    display: table;
+}
+
+li.has-submenu{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.dropdown.menu li{
+    display: inline-flex;
+}
+
+.dropdown.menu li a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+}
+
+.dropdown.menu li a:hover {
+    font-weight: 700;
+    
+}
+
+.dropdown.menu li a:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    -webkit-transform: translateX(-50%) scaleX(0);
+    -webkit-transform-origin: 50% 50%;
+    width: 60%;
+    height: 3px;
+    background-color: rgba(255,255,255,0.9);
+    transition: transform 250ms;
+    -webkit-transition: transform 250ms;
+    transition: transform 250ms;
+}
+
+.dropdown.menu li a:hover:after{
+    -webkit-transform: translateX(-50%) scaleX(1);
+    transform: translateX(-50%) scaleX(1);
+}
+
+
+.top-bar{
+    border-radius: 100px;
+    margin-top: 20px;
+}
+
+.top-bar-right{
+    margin-right: 20px;
+    justify-content: space-around;
+}
+
+.top-bar-left{
+    border-radius: 100px;
+}
+
+.has-submenu{
+    margin-right: 20px;
+}
+
+ul.dropdown.menu{
+    margin-right: 20px;
+    border-radius: 100px;
+}
+
+.flex-parent{
+    display: flex;
+    justify-content: space-around;
+    height: 75vh;
+    flex-wrap: wrap;
+}
+
+.flex-child{
+width: 31%;
+border-radius: 40px;
+}
+
+/* Demo Styling */
+
+.flex-parent {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: white;
+    margin-top: 100px;
+  }
+  
+  .flex-child {
+    min-height: 50px;
+    min-width: 50px;
+    line-height: 50px;
+    margin: 10px;
+    background-color: #97c3c1;
+    color: white;
+    text-align: center;
+  }
+  
+  .child1, .child4, .child7{
+      filter: opacity(60%)
+  }
+
+  .child2, .child5, .child8{
+      filter: opacity(80%)
+  }
